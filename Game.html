@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Even Game</title>
+    <script src="Code.js"></script>
+    <link href="Main.css" rel="stylesheet">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+        select, button{
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        button{
+            background-color: brown;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Even or Odd Challenge</h1>
+    <!-- <strong> highlights the code you wish to have showcased. -->
+        <p>Select <strong>even</strong> or <strong>odd</strong>, then click the button to see if you win!</p>
+        <select id="choice">
+            <option value="even">Even</option>
+            <option value="odd">Odd</option>
+        </select>
+        <button onclick="playEvenOdd();"> Play</button>
+        <div id="output"></div>
+    </header>
+</body>
+</html>
